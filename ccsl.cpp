@@ -81,7 +81,7 @@ class CSLL{
 	temp->next=NULL;
 	delete temp;
     }
-    void Delet(){
+    void Dele(){
         Node *current=head;
 	while(current->next->next!=head){
 		current=current->next;
@@ -113,7 +113,7 @@ int main(){
     csll1.InsertAt(32,25);
     csll1.display();
 	csll1.CountItems();
-	csll1.Delet();
+	csll1.Del();
 	csll1.display();
 	csll1.CountItems();
 	csll1.DeleteAt(6);
